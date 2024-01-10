@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+}
+
+.chat-container {
+  background-color: #f5f5f5; /* Adjust background color */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.chat-header {
+  text-align: center;
+}
+
+.chat-content {
+  height: 400px; /* Adjust chat content height */
+  overflow-y: scroll;
+}
+
+.chat-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-list li {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.chat-list li.sent {
+  background-color: #f0f8ff; /* Adjust sent message color */
+}
+
+.chat-list li.received {
+  background-color: #e6f7ff; /* Adjust received message color */
+}
+
+.chat-input input,
+.chat-input textarea {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px; /* Adjust font size */
+}
+
+.chat-input button {
+  border-radius: 5px;
+  background-color: green; /* Adjust send button color */
+  color: white;
+}
+
+  /* Add this to your existing CSS */
+  .alert.odd {
+    background-color: #12852d; /* Green color for odd messages */
+    color: #fff; /* White text for better readability on green background */
+    align-self: flex-start; /* Position on the left for odd messages */
+  }
+  
+  .alert.even {
+    background-color: #ffa600; /* Blue color for even messages */
+  }
